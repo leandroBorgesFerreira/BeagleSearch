@@ -2,7 +2,6 @@ package br.com.bleaglesearch.sample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -21,17 +20,14 @@ class NavigationActivity : AppCompatActivity() {
 
     @Composable
     fun NavigationGraph(navController: NavHostController) {
-        Log.d("NavigationGraph", "creating graph")
         NavHost(navController = navController, startDestination = Destinations.TRANSACTIONS.id) {
             composable(Destinations.TRANSACTIONS.id) {
-                Log.d("NavigationGraph", "navigating to transactions")
                 TransactionsScreen(navigateToHelp = {
                     navController.navigate(Destinations.HELP.id)
                 })
             }
 
             composable(Destinations.HELP.id) {
-                Log.d("NavigationGraph", "navigating to help")
                 HelpScreen(navigateToTransactions = {
                     navController.navigate(Destinations.TRANSACTIONS.id)
                 })

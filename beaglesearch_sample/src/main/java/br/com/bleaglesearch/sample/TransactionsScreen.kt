@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun TransactionsScreen(navigateToHelp: () -> Unit) {
-
     Box(modifier = Modifier.fillMaxSize()) {
         Text("TransactionsScreen", modifier = Modifier.align(alignment = Alignment.Center))
 

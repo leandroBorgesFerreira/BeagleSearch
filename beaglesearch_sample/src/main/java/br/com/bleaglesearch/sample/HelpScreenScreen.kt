@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun HelpScreen(navigateToTransactions: () -> Unit) {
-
     Box(modifier = Modifier.fillMaxSize()) {
         Text("HelpScreen", modifier = Modifier.align(alignment = Alignment.Center))
 
