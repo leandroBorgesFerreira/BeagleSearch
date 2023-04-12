@@ -11,6 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/beagle_search" />
             <option value="$PROJECT_DIR$/beaglesearch_sample" />
           </set>
         </option>

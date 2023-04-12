@@ -46,6 +46,8 @@ def hilt_version = "2.44"
 
 dependencies {
 
+    implementation project(":beagle_search")
+
     implementation 'com.google.android.material:material:1.8.0'
 
     // Androidx
