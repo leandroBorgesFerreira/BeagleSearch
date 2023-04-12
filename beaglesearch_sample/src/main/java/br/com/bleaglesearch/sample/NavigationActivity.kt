@@ -15,6 +15,7 @@ class NavigationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            Log.d("NavigationActivity", "Creating NavigationGraph")
             NavigationGraph(rememberNavController())
         }
     }
